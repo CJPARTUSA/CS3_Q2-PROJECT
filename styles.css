@@ -1,0 +1,146 @@
+body {
+    font-family: Bradley Hand, cursive;
+    font-size: 130%;
+    margin: 0;
+    padding: 0;
+    color: #4B342C; /* Color of all text */
+}
+
+#background {
+    background-image: url('header1-bg.png'); /* Replace 'your-background-image.jpg' with your image file */
+    background-size: cover;
+    background-attachment: fixed; /* Optional: Fixed background */
+    background-position: center;
+}
+
+header {
+    font-family: Bookman, "URW Bookman L", serif;
+    color: #FFCBA2;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer{
+	font-family: Bookman, "URW Bookman L", serif;
+    color: #FFCBA2;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+nav {
+    background-image: url('header2-bg.png');
+    text-align: center;
+    padding: 10px 0;
+    color: #4B342C;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #4B342C;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #4B342C;
+}
+
+main {
+    background-image: url('table-bg.png'); /* Background color in <main> */
+    padding: 20px;
+}
+
+#div1 {
+	width: 75%; /* Adjust the width as needed to control the image size */
+    height: auto; /* Automatically adjust the height to maintain the image's aspect ratio */
+    display: block; /* To remove any extra spacing around the image */
+    margin: 50px;
+}
+
+#div2 {
+	width: 85%; /* Adjust the width as needed to control the image size */
+    height: auto; /* Automatically adjust the height to maintain the image's aspect ratio */
+    display: block; /* To remove any extra spacing around the image */
+    margin: 50px;
+}
+
+#introduction,
+#features {
+    padding: 20px;
+}
+
+/* Content Page Specific Styles */
+#content {
+    padding: 20px;
+    margin-right: 200px;
+}
+
+#enlarge-image {
+    width: 300%;
+    height: auto;
+}
+
+.social-container{
+	display: flex;
+	align-items: center;
+}
+
+.social-icon{
+	width: 30px;
+	height: 30px;
+	margin-right: 7.5px;
+	background: url('social-icons-sprite.png');
+	display: inline-block;
+}
+
+.facebook-icon {
+	background-position: -27px -19px;
+	width: 36px;
+	height: 35px;
+}
+
+.instagram-icon {
+	background-position: -109px -17px;
+	width: 38px;
+	height: 37px;
+}
+
+.youtube-icon {
+	background-position: -152px -17px;
+	width: 37px;
+	height: 37px;
+}
+
+.social-icon:hover {
+	opacity: 0.7;
+	transition: opacity 0.3s;
+	ease-in-out: ;
+}
+
+.floating-element {
+    border-radius: 50%;
+    animation: floatAnimation 3s infinite ease-in-out;
+}
+
+@keyframes floatAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); 
+    }
+}
